@@ -4,6 +4,10 @@
     angular
     .module("ngClassifieds")
     .controller("classifiedsCtrl", function($scope) {
-        $scope.name = "Nitin";
+        $scope.classified = {
+            title: 'the title',
+            price: 1000,
+            description: 'long description here'
+        }
     })
 })();
