@@ -15,6 +15,7 @@
         classifiedsFactory.getClassifieds()
             .then(function(classifieds) {
                 $scope.classifieds = classifieds.data;
+                $scope.categories = getCategories($scope.classifieds);
             });
         
         $scope.openSidebar = function () {
@@ -71,6 +72,18 @@
                     .position('top, right')
                     .hideDelay(2000)
             );
+        }
+
+        function getCategories(classifieds) {
+            var categories = [];
+            angular.forEach(classifieds, function(item) {
+                angular.forEach(item.categories, function(category) {
+                    categories.push(category);
+                });
+            });
+
+            // return unique
+            return _.uniq(categories);
         }
     });
 })();
