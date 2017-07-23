@@ -76,7 +76,9 @@
         </md-sidenav>
 
         <md-content class="md-padding" layout="row" layout-wrap>
-            <md-card ng-repeat="classified in classifieds | filter: classifiedsFilter | filter: category" flex="30">
+            <md-card ng-repeat="classified in classifieds | filter: classifiedsFilter | filter: category"
+                flex="30"
+                class="classified">
                 <img src="{{ classified.image }}" alt="image">
                 <md-card-content>
                     <div class="classified-info" ng-show="!showContact">
