@@ -12,14 +12,14 @@
         <md-toolbar>
             <div class="md-toolbar-tools">
                 <p><strong>Angular Classifieds</strong></p>
-                <md-button>
+                <md-button ng-click="openSidebar()">
                     <md-icon class="mdi mdi-plus-circle"></md-icon>
                     New Classified
                 </md-button>
             </div>
         </md-toolbar>
 
-        <md-sidenav class="md-sidenav-left md-whiteframe-z2" md-component-id="left" md-is-locked-open="true">
+        <md-sidenav class="md-sidenav-left md-whiteframe-z2" md-component-id="left">
             <md-toolbar>
                 <h1 class="md-toolbar-tools">Add a Classified</h1>
             </md-toolbar>
@@ -44,7 +44,7 @@
                     </md-input-container>
                     <md-button class="md-primary">Save</md-button>
                     <md-button class="md-primary">Save Edit</md-button>
-                    <md-button class="md-warn">Cancel</md-button>
+                    <md-button class="md-warn" ng-click="closeSidebar()">Cancel</md-button>
                 </form>
             </md-content>
         </md-sidenav>
