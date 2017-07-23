@@ -16,5 +16,11 @@
         $scope.closeSidebar = function () {
             $mdSidenav('left').close();
         }
+
+        $scope.saveClassified = function(classified) {
+            if (classified) {
+                $scope.classifieds.push(classified);
+            }
+        }
     });
 })();
