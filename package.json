@@ -1,5 +1,5 @@
 {
-  "name": "ng-classifieds",
+  "name": "angular-classifieds",
   "version": "0.0.0",
   "main": "index.js",
   "author": "Nitin",
@@ -9,6 +9,7 @@
     "angular-animate": "^1.5.0",
     "angular-aria": "^1.5.0",
     "angular-material": "^0.11.4",
+    "angular-ui-router": "^0.2.18",
     "mdi": "^1.4.57"
   }
 }
